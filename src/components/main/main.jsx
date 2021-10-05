@@ -37,8 +37,8 @@ const Main = () => {
         <Route path="/notice/create" component={NoticeCreate} />
         <Route path="/notice/:id" component={NoticeDetail} />
 
-        <Route exact path="/mbti" component={MBTI} />
-        <Route exact path="/preq" component={Preq} />
+        <Route path="/mbti" component={MBTI} />
+        <Route path="/preq" component={Preq} />
 
       </Switch>
     </main>             

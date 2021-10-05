@@ -1,11 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { hot } from "react-hot-loader";
 import { Link } from "react-router-dom";
 import "./assets/css/style.scss";
 
 import questions from "./question";
 
-const MBTI = () => {
+const MBTI = ({location}) => {
+
+    console.log(location)
+
+    const preqValue = [
+        {
+            type: '개발',
+            sumlist: ['front', 'back', 'desk', 'mobile', 'gclient', 'iot']
+        },
+        {
+            type: '연구',
+            sumlist: ['mle', 'what', 'ma']
+        },
+        {
+            type: '관리',
+            sumlist: ['gserver', 'dbm', 'bigdb']
+        },
+        {
+            type: '디자인',
+            sumlist: ['model', 'uiux']
+        },
+    ]
 
     const [totalScore, setTotalScore] = useState(
         [
@@ -41,7 +62,7 @@ const MBTI = () => {
         var sz = [7, 6, 5, 6, 6, 6, 5, 5, 5, 6, 5, 7, 6, 4];
 
         [...Array(34)].map((item, i)=>{
-            
+
             const exNum = eval(`e.target.n${i}`);
 
             front += exNum.value * questions[i].effect.front
@@ -60,6 +81,36 @@ const MBTI = () => {
             iot += exNum.value * questions[i].effect.iot
 
         });
+
+        console.log(location.state.epValue)
+        switch (location.state.epValue) {
+            case '개발':
+                front += 5.0;
+                back += 5.0;
+                desk += 5.0;
+                mobile += 5.0; 
+                gclient += 5.0; 
+                iot += 5.0;
+                break;
+
+            case '연구':
+                mle += 5.0;
+                what += 5.0; 
+                ma += 5.0;
+                break;
+
+            case '관리':
+                dbm += 5.0;
+                gserver += 5.0; 
+                bigdb += 5.0;
+                break;
+
+            case '디자인':
+                model += 5.0;
+                uiux += 5.0; 
+                break;
+        }
+
 
         const jobList = [
             front, back, desk, mobile, model, uiux, gclient, 

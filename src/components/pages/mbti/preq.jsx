@@ -1,27 +1,19 @@
 import React, { useState } from "react";
 import { hot } from "react-hot-loader";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import "./assets/css/style.scss";
 
+import MBTI from "./mbti";
+
 const PreQuestion = () => {
-    const preqValue = [
-        {
-            type: '개발',
-            sumlist: [front, back, desk, mobile, gclient, iot]
-        },
-        {
-            type: '연구',
-            sumlist: [mle, what, ma]
-        },
-        {
-            type: '관리',
-            sumlist: [gserver, dbm, bigdb]
-        },
-        {
-            type: '디자인',
-            sumlist: [model, uiux]
-        },
-    ]
+
+    const [preqType, setPreqType] = useState('개발');
+
+    const preqCheck = (e) => {
+        e.persist();
+        console.log(e.target.value)
+        setPreqType(e.target.value)
+    }
 
     return(
         <>
@@ -30,23 +22,34 @@ const PreQuestion = () => {
             
             <label className="preq-label">
                 <h3>개발</h3>
-                <input type="radio" name="preq" value="개발"/>    
+                <input type="radio" name="preq" value="개발" onClick={preqCheck}/>    
             </label>
             
             <label className="preq-label">
                 <h3>연구</h3>
-                <input type="radio" name="preq" value="연구"/>    
+                <input type="radio" name="preq" value="연구" onClick={preqCheck}/>    
             </label>
             
             <label className="preq-label">
                 <h3>관리</h3>
-                <input type="radio" name="preq" value="관리"/>    
+                <input type="radio" name="preq" value="관리" onClick={preqCheck}/>    
             </label>
             
             <label className="preq-label">
                 <h3>디자인</h3>
-                <input type="radio" name="preq" value="디자인"/>    
+                <input type="radio" name="preq" value="디자인" onClick={preqCheck}/>    
             </label>
+
+            <h1>
+                <Link
+                    to={{
+                        pathname: '/mbti/question',
+                        state: {
+                            epValue: preqType
+                        },
+                    }}
+                >테스트하기!</Link>
+            </h1>
 
         </>
     )
