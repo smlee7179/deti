@@ -1,0 +1,110 @@
+.header {
+    overflow: hidden;
+    height: 100px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+
+    box-shadow: 0 0 10px rgba(70, 70, 70, 0.3);
+
+    *{
+        transition: all .5s;
+    }
+
+    .header-logo{
+        font-size: 40px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .header_nav-tab{
+        display: none;
+        cursor: pointer;
+        span{
+            font-size: 30px;
+            line-height: 80px;
+        }
+    }
+
+    .header_nav{
+        overflow: hidden;
+        height: 100vh;
+        z-index: 50;
+        .nav-itm{
+            &.close{
+                cursor: pointer;
+                display: none;
+            }
+            color: #000;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 10px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 280px) {
+    .header {
+        line-height: 80px;
+        height: 80px;
+        .header-logo{font-size: 20px;}
+        .header_nav-tab{
+            display: block;
+        }
+        .header_nav{
+            position: fixed;
+            display: block;
+            width: 100vw;
+            left: 0;
+            top: -110vh;
+            .nav-itm{
+                &.close{
+                    display: block;
+                }
+                // background-color: #fff;
+                display: block;
+                margin: 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(70, 70, 70, 0.2);
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .header {
+        height: 100px;
+        line-height: 100px;
+        .header-logo{font-size: 40px;}
+        .header_nav-tab{display: none;}
+        .header_nav{
+            position: relative;
+            display: block;
+            width: auto;
+            height: 100px;
+            box-shadow: none;
+            top: 0vh;
+            display: block;
+            background-color: #fff;
+            opacity: 100%;
+            .nav-itm{
+                &.close{
+                    display: none;
+                }
+                background-color: #fff;
+                display: inline;
+                margin: 0 10px;
+                text-align: center;
+                border-bottom: none;
+                width: 100%;
+            }
+        }
+    }
+}

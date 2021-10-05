@@ -1,0 +1,31 @@
+.titleContainer {
+  display: flex;
+  flex-direction:row;
+  h1 {
+    align-self: flex-end;
+    margin-left: 30px;
+    font-size: 35px;
+    width: 50%;
+  }
+  div {
+    align-self: flex-end;
+    margin-right: 20px;
+    width: 50%;
+    span {
+      padding: 5px;
+      border:1px solid black;
+      font-size: 12pt;
+      float: right;
+    }
+  }
+}
+
+.listContainer {
+  border:1px solid black;
+  display: flex;
+  flex-wrap: wrap; 
+  margin-top: 5px;
+  padding-top: 20px;
+  justify-content:center;
+}
+

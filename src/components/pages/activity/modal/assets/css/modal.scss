@@ -1,0 +1,113 @@
+.modal {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 9999px;
+    position: absolute;
+    z-index: 110;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    background-color: white;
+
+    .modal_close{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+
+        .modal_close_button{
+            background-color: white;
+            border: 2px solid gray;
+            border-radius: 16px;
+            margin: 5px;
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+        }
+
+    }
+
+    .modal_div{
+
+        border: 2px solid rebeccapurple;
+
+        justify-content: center;
+        margin: 10px;
+        margin-top : 0px;
+        padding: 10px;
+
+        .modal_div_title{
+            display: flex;
+            justify-content: center;
+        }
+        //body 시작
+
+        // footer 시작
+        .footer_div{
+
+            padding: 10px;
+            border: 2px solid greenyellow;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px;
+        }
+
+    }
+
+}
+
+.body_div{
+    display: flex;
+
+    .img_div{
+        border: 2px solid gold;
+        height: 300px;
+        width: 70%;
+        margin: 5px;
+        padding: 5px;
+
+        .img_div_box{
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .img_div_img{
+                height :100%;
+                width : 100%
+            }
+        }
+
+        .img_div_button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10%;
+
+            .img_div_arrow{
+                cursor: pointer;
+                margin: 10px;
+                background-color: white;
+                border: 2px solid gray;
+                border-radius: 3px;
+            }
+
+            .img_div_page{
+                font-size: small;
+            }
+
+        }
+    }
+
+    .text_div{
+
+        border: 2px solid skyblue;
+
+        height: 300px;
+        width: 25%;
+        margin: 5px;
+        padding: 5px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

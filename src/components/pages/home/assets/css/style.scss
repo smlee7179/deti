@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+$color--border: #dadada;
+
+.about,
+.project,
+.faq {
+  border-bottom: solid 1px $color--border;
+  margin: 30px 0px;
+}

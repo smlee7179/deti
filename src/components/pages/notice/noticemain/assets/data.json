@@ -1,0 +1,75 @@
+{
+    "notice":[
+        {
+            "id":0,
+            "creator": "Lee",
+            "backPhoto":"#FAF4C0",
+            "title": "1번. 아무거나",
+            "content": "여긴 내용이 들어갈거야",
+            "date": "2021-09-07",
+            "view":0
+
+        },
+        {
+            "id":1,
+            "creator": "Lee",
+            "backPhoto":"#D4F4FA",
+            "title": "2번. 사무실 청소일자",
+            "content": "여긴 내용이 들어갈거야",
+            "date": "2021-09-07",
+            "view":0
+
+        },
+        {
+            "id":2,
+            "creator": "Lee",
+            "backPhoto":"#D9E5FF",
+            "title": "3번. 제목이 더 길 경우에 어떻게 될지 봐.",
+            "content": "여긴 내용이 들어갈거야",
+            "date": "2021-09-07",
+            "view":0
+
+        },
+        {
+            "id":3,
+            "creator": "Lee",
+            "backPhoto":"#EAEAEA",
+            "title": "4번",
+            "content": "한국어를 사랑하는 외국인 친구들의 글로벌 멘토로써 한국어 능력...",
+            "date": "2021-09-07",
+            "view":0
+
+        },
+        {
+            "id":4,
+            "creator": "Lee",
+            "backPhoto":"#FAE0D4",
+            "title": "5번",
+            "content": "여긴 내용이 들어갈거야",
+            "date": "2021-09-07",
+            "view":0
+
+        },
+        {
+            "id":5,
+            "creator": "Lee",
+            "backPhoto":"",
+            "title": "6번",
+            "content": "여긴 내용이 들어갈거야",
+            "date": "2021-09-07",
+            "view":0
+
+        },
+        {
+            "id":6,
+            "creator": "Lee",
+            "backPhoto":"",
+            "title": "7번",
+            "content": "여긴 내용이 들어갈거야",
+            "date": "2021-09-07",
+            "view":0
+
+        }
+    ]
+}
+
