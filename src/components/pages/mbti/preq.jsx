@@ -21,23 +21,28 @@ const PreQuestion = () => {
             <h1>관심 분야</h1>
             
             <label className="preq-label">
-                <h3>개발</h3>
-                <input type="radio" name="preq" value="개발" onClick={preqCheck}/>    
+                <h3>웹/앱</h3>
+                <input type="radio" name="preq" value="웹앱" onClick={preqCheck}/>    
             </label>
             
             <label className="preq-label">
-                <h3>연구</h3>
-                <input type="radio" name="preq" value="연구" onClick={preqCheck}/>    
+                <h3>게임</h3>
+                <input type="radio" name="preq" value="게임" onClick={preqCheck}/>    
             </label>
             
             <label className="preq-label">
-                <h3>관리</h3>
-                <input type="radio" name="preq" value="관리" onClick={preqCheck}/>    
+                <h3>데이터</h3>
+                <input type="radio" name="preq" value="데이터" onClick={preqCheck}/>    
             </label>
             
             <label className="preq-label">
-                <h3>디자인</h3>
-                <input type="radio" name="preq" value="디자인" onClick={preqCheck}/>    
+                <h3>정보 보안</h3>
+                <input type="radio" name="preq" value="정보보안" onClick={preqCheck}/>    
+            </label>
+
+            <label className="preq-label">
+                <h3>사물 인터넷</h3>
+                <input type="radio" name="preq" value="사물인터넷" onClick={preqCheck}/>    
             </label>
 
             <h1>
@@ -50,6 +55,7 @@ const PreQuestion = () => {
                     }}
                 >테스트하기!</Link>
             </h1>
+
 
         </>
     )

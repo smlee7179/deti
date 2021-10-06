@@ -11,20 +11,24 @@ const MBTI = ({location}) => {
 
     const preqValue = [
         {
-            type: '개발',
-            sumlist: ['front', 'back', 'desk', 'mobile', 'gclient', 'iot']
+            type: '웹앱',
+            sumlist: ['front', 'back', 'desk', 'mobile']
         },
         {
-            type: '연구',
-            sumlist: ['mle', 'what', 'ma']
+            type: '게임',
+            sumlist: ['model', 'uiux','gclient', 'gserver']
         },
         {
-            type: '관리',
-            sumlist: ['gserver', 'dbm', 'bigdb']
+            type: '데이터',
+            sumlist: ['mle', 'dbm', 'bigdb']
         },
         {
-            type: '디자인',
-            sumlist: ['model', 'uiux']
+            type: '정보보안',
+            sumlist: ['ma', 'what']
+        },
+        {
+            type: '사물인터넷',
+            sumlist: ['iot']
         },
     ]
 
@@ -59,7 +63,7 @@ const MBTI = ({location}) => {
         front = back = desk = mobile = model = uiux = gclient
         = gserver = dbm = bigdb = mle = what = ma = iot = 0.0;
 
-        var sz = [7, 6, 5, 6, 6, 6, 5, 5, 5, 6, 5, 7, 6, 4];
+        var sz = [7, 6, 5, 6, 6, 6, 5, 5, 5, 6, 5, 7, 6, 3];
 
         [...Array(34)].map((item, i)=>{
 
@@ -84,30 +88,33 @@ const MBTI = ({location}) => {
 
         console.log(location.state.epValue)
         switch (location.state.epValue) {
-            case '개발':
-                front += 5.0;
-                back += 5.0;
-                desk += 5.0;
-                mobile += 5.0; 
-                gclient += 5.0; 
-                iot += 5.0;
+            case '웹앱':
+                front += 3.0;
+                back += 3.0;
+                desk += 3.0;
+                mobile += 3.0; 
                 break;
 
-            case '연구':
-                mle += 5.0;
-                what += 5.0; 
-                ma += 5.0;
+            case '게임':
+                model += 3.0;
+                uiux += 3.0;
+                gclient += 3.0; 
+                gserver += 3.0;
                 break;
 
-            case '관리':
-                dbm += 5.0;
-                gserver += 5.0; 
-                bigdb += 5.0;
+            case '데이터':
+                dbm += 3.0;
+                mle += 3.0; 
+                bigdb += 3.0;
                 break;
 
-            case '디자인':
-                model += 5.0;
-                uiux += 5.0; 
+            case '정보보안':
+                what += 3.0;
+                ma += 3.0; 
+                break;
+
+            case '사물인터넷':
+                iot += 3.0; 
                 break;
         }
 
@@ -158,6 +165,10 @@ const MBTI = ({location}) => {
                                     <input name={'n'+i} value={3.0} type="radio" />
                                     <input name={'n'+i} value={4.0} type="radio" />
                                     <input name={'n'+i} value={5.0} type="radio" />
+                                </div>
+                                <div className="input-wrapper">
+                                    <p>전혀 아니다</p>
+                                    <p>매우 그렇다</p>
                                 </div>
                             </label>
                         )

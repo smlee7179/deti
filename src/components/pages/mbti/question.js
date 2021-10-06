@@ -490,11 +490,11 @@ const questions = [
             "mle": 0.0,
              "what": 0.0,
              "ma": 0.0,
-            "iot": 1.0,
+            "iot": 0.0,
         }
 },
     {
-        "question": "기계가 내 일을 대신 해줬으면 좋겠습니다.",
+        "question": "내 일을 대신해주는 기계를 만들고싶습니다.",
         "effect": {
              "front": 0.0,
              "back": 0.0,
