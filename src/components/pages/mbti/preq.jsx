@@ -26,7 +26,7 @@ const PreQuestion = () => {
     const q1Check = (e) => {
         e.persist();
         console.log(e.target.value)
-        setQ2Type(e.target.value)
+        setQ1Type(e.target.value)
     }
 
     return (
@@ -93,7 +93,7 @@ const PreQuestion = () => {
 
             <section style={{ margin: "20px", }}>
                 <h1>관심 분야</h1> {/* 질문-분야 */}
-                
+
                 <label className="preq-label">
                     <h3>웹/앱</h3>
                     <input type="radio" name="preq" value="웹앱" onClick={preqCheck} />
