@@ -89,32 +89,32 @@ const MBTI = ({location}) => {
         console.log(location.state.epValue)
         switch (location.state.epValue) {
             case '웹앱':
-                front += 3.0;
-                back += 3.0;
-                desk += 3.0;
-                mobile += 3.0; 
+                front += 5.0;
+                back += 5.0;
+                desk += 5.0;
+                mobile += 5.0; 
                 break;
 
             case '게임':
-                model += 3.0;
-                uiux += 3.0;
-                gclient += 3.0; 
-                gserver += 3.0;
+                model += 5.0;
+                uiux += 5.0;
+                gclient += 5.0; 
+                gserver += 5.0;
                 break;
 
             case '데이터':
-                dbm += 3.0;
-                mle += 3.0; 
-                bigdb += 3.0;
+                dbm += 5.0;
+                mle += 5.0; 
+                bigdb += 5.0;
                 break;
 
             case '정보보안':
-                what += 3.0;
-                ma += 3.0; 
+                what += 5.0;
+                ma += 5.0; 
                 break;
 
             case '사물인터넷':
-                iot += 3.0; 
+                iot += 5.0; 
                 break;
         }
 

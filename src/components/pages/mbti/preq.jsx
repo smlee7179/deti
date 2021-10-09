@@ -56,6 +56,7 @@ const PreQuestion = () => {
                 >테스트하기!</Link>
             </h1>
 
+            {/* <h1 className="delete">강민지 존예!!!!!</h1> */}
 
         </>
     )
